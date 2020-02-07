@@ -1,0 +1,660 @@
+{
+  "version": "1.21.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "TypescriptStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "TypescriptStack.template.json"
+      },
+      "metadata": {
+        "/TypescriptStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2",
+              "id": "67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2",
+              "packaging": "zip",
+              "sourceHash": "67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2",
+              "s3BucketParameter": "AssetParameters67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2S3Bucket29701719",
+              "s3KeyParameter": "AssetParameters67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2S3VersionKey885F7AE7",
+              "artifactHashParameter": "AssetParameters67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2ArtifactHash7161DA39"
+            },
+            "trace": [
+              "TypescriptStack.addFileAsset (/home/infovision/workshop/node_modules/@aws-cdk/core/lib/stack.ts:553:17)",
+              "new Asset (/home/infovision/workshop/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:113:28)",
+              "AssetCode.bind (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/function.ts:450:29)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:10:19)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/HelloHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandlerServiceRole11EF7C63",
+            "trace": [
+              "new Role (/home/infovision/workshop/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "new Function (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/function.ts:440:31)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:10:19)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/HelloHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandler2E4FBA4D",
+            "trace": [
+              "new Function (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/function.ts:453:35)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:10:19)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/AssetParameters/67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2S3Bucket29701719",
+            "trace": [
+              "new FileAssetParameters (/home/infovision/workshop/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "TypescriptStack.addFileAsset (/home/infovision/workshop/node_modules/@aws-cdk/core/lib/stack.ts:540:16)",
+              "new Asset (/home/infovision/workshop/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:113:28)",
+              "AssetCode.bind (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/function.ts:450:29)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:10:19)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/AssetParameters/67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2S3VersionKey885F7AE7",
+            "trace": [
+              "new FileAssetParameters (/home/infovision/workshop/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "TypescriptStack.addFileAsset (/home/infovision/workshop/node_modules/@aws-cdk/core/lib/stack.ts:540:16)",
+              "new Asset (/home/infovision/workshop/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:113:28)",
+              "AssetCode.bind (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/function.ts:450:29)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:10:19)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/AssetParameters/67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters67d435cfe9d0e7818fc2d2907dda0fb1f0777b3e7dc887a3ce73dbbea696f6d2ArtifactHash7161DA39",
+            "trace": [
+              "new FileAssetParameters (/home/infovision/workshop/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:36)",
+              "TypescriptStack.addFileAsset (/home/infovision/workshop/node_modules/@aws-cdk/core/lib/stack.ts:540:16)",
+              "new Asset (/home/infovision/workshop/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:113:28)",
+              "AssetCode.bind (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/function.ts:450:29)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:10:19)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointEEF1FD8F",
+            "trace": [
+              "new RestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:224:22)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeployment318525DA37c0e38727e25b4317827bf43e918fbf",
+            "trace": [
+              "new Deployment (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:69:21)",
+              "LambdaRestApi.configureDeployment (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:394:32)",
+              "new RestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:240:10)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeploymentStageprodB78BEEA0",
+            "trace": [
+              "new Stage (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:186:22)",
+              "LambdaRestApi.configureDeployment (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:404:30)",
+              "new RestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:240:10)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpoint8024A810",
+            "trace": [
+              "LambdaRestApi.configureDeployment (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:409:7)",
+              "new RestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:240:10)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointCloudWatchRoleC3C64E0F",
+            "trace": [
+              "new Role (/home/infovision/workshop/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "LambdaRestApi.configureCloudWatchRole (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:418:18)",
+              "new RestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:244:12)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointAccountB8304247",
+            "trace": [
+              "LambdaRestApi.configureCloudWatchRole (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:423:22)",
+              "new RestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:244:12)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpointproxy39E2174E",
+            "trace": [
+              "new Resource (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:387:22)",
+              "new ProxyResource (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:448:5)",
+              "RootResource.addProxy (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:179:12)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Default/{proxy+}/ANY/ApiPermission.TypescriptStackEndpoint67643734.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionTypescriptStackEndpoint67643734ANYproxyF7587A6B",
+            "trace": [
+              "Function.addPermission (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:203:5)",
+              "LambdaIntegration.bind (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:61:18)",
+              "Method.renderIntegration (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:211:17)",
+              "Method.renderIntegration (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:204:21)",
+              "new Method (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:152:25)",
+              "ProxyResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:175:12)",
+              "ProxyResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:470:18)",
+              "new ProxyResource (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:457:29)",
+              "RootResource.addProxy (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:179:12)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.TypescriptStackEndpoint67643734.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionTestTypescriptStackEndpoint67643734ANYproxy4340FD95",
+            "trace": [
+              "Function.addPermission (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:203:5)",
+              "LambdaIntegration.bind (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:69:20)",
+              "Method.renderIntegration (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:211:17)",
+              "Method.renderIntegration (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:204:21)",
+              "new Method (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:152:25)",
+              "ProxyResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:175:12)",
+              "ProxyResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:470:18)",
+              "new ProxyResource (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:457:29)",
+              "RootResource.addProxy (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:179:12)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYC09721C5",
+            "trace": [
+              "new Method (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:158:22)",
+              "ProxyResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:175:12)",
+              "ProxyResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:470:18)",
+              "new ProxyResource (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:457:29)",
+              "RootResource.addProxy (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:179:12)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Default/ANY/ApiPermission.TypescriptStackEndpoint67643734.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionTypescriptStackEndpoint67643734ANY04B74EF7",
+            "trace": [
+              "Function.addPermission (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:203:5)",
+              "LambdaIntegration.bind (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:61:18)",
+              "Method.renderIntegration (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:211:17)",
+              "Method.renderIntegration (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:204:21)",
+              "new Method (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:152:25)",
+              "RootResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:175:12)",
+              "ProxyResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:467:29)",
+              "new ProxyResource (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:457:29)",
+              "RootResource.addProxy (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:179:12)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Default/ANY/ApiPermission.Test.TypescriptStackEndpoint67643734.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionTestTypescriptStackEndpoint67643734ANY2A3FE42D",
+            "trace": [
+              "Function.addPermission (/home/infovision/workshop/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:203:5)",
+              "LambdaIntegration.bind (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:69:20)",
+              "Method.renderIntegration (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:211:17)",
+              "Method.renderIntegration (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:204:21)",
+              "new Method (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:152:25)",
+              "RootResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:175:12)",
+              "ProxyResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:467:29)",
+              "new ProxyResource (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:457:29)",
+              "RootResource.addProxy (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:179:12)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptStack/Endpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANY485C938B",
+            "trace": [
+              "new Method (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:158:22)",
+              "RootResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:175:12)",
+              "ProxyResource.addMethod (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:467:29)",
+              "new ProxyResource (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:457:29)",
+              "RootResource.addProxy (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:179:12)",
+              "new LambdaRestApi (/home/infovision/workshop/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new TypescriptStack (/home/infovision/workshop/lib/typescript-stack.ts:17:5)",
+              "Object.<anonymous> (/home/infovision/workshop/bin/typescript.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Module.m._compile (/home/infovision/workshop/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/home/infovision/workshop/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "main (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/infovision/workshop/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:778:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:831:12)",
+              "findNodeScript.then.existing (/home/infovision/.nvm/versions/node/v10.19.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/core": "1.23.0",
+      "@aws-cdk/cx-api": "1.23.0",
+      "@aws-cdk/aws-lambda": "1.23.0",
+      "@aws-cdk/aws-iam": "1.23.0",
+      "@aws-cdk/region-info": "1.23.0",
+      "@aws-cdk/aws-cloudwatch": "1.23.0",
+      "@aws-cdk/aws-ec2": "1.23.0",
+      "@aws-cdk/aws-ssm": "1.23.0",
+      "@aws-cdk/aws-logs": "1.23.0",
+      "@aws-cdk/aws-sqs": "1.23.0",
+      "@aws-cdk/aws-kms": "1.23.0",
+      "@aws-cdk/aws-s3-assets": "1.23.0",
+      "@aws-cdk/assets": "1.23.0",
+      "@aws-cdk/aws-s3": "1.23.0",
+      "@aws-cdk/aws-events": "1.23.0",
+      "@aws-cdk/aws-apigateway": "1.23.0",
+      "jsii-runtime": "node.js/v10.19.0"
+    }
+  }
+}
